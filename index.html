@@ -7,7 +7,7 @@
   <title>Document</title>
   <style>
     *{margin:0;padding:0;box-sizing:border-box;}
-    :root {
+    html {
       --button-size: 32px;
       --font-size: 14px;
       --button-bg:#fff;
@@ -25,36 +25,16 @@
     }
   </style>
   <style>
-      .g-button{
-        font-size: var( --font-size);
-        height:var(--button-size);
-        padding:0 1em;
-        border-radius:var(--border-radius);
-        border:1px solid var(--border-color);
-        background:var(--button-bg);
-      }
-      .g-button:hover{
-        border-color:var(--border-color-hover);
-      }
-      .g-button:active{
-        background-color:var(--button-active-bg);
-      }
-      .g-button:focus{
-        outline:none;
-      }
+    .icon{width: 1em;height:1em;}
   </style>
 </head>
 <body>
   <div id="app">
-      <g-button></g-button>
+      <!-- <Button icon="settings">我爱js</Button> -->
+      <!-- <Button>我爱js</Button> -->
+      <Button icon="settings" icon-position="right">我爱js</Button>
   </div>
-  <script src="./node_modules/vue/dist/vue.min.js"></script>
-  <!-- <script src="https://cdn.bootcss.com/vue/2.4.2/vue.min.js"></script> -->
-  <script src="./button.js"></script>
-  <script>
-    new Vue({
-      el:'#app',
-    })
-  </script>
+  <script src="./src/app.js"></script>
+  <script src="//at.alicdn.com/t/font_775244_ex639p5s3rh.js"></script>
 </body>
 </html>
